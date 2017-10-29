@@ -21,13 +21,19 @@ class ViewController: UIViewController, ARSKViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and node count
-        sceneView.showsFPS = true
+      /*  sceneView.showsFPS = true
         sceneView.showsNodeCount = true
+        sceneView.showsDrawCount = true
+        sceneView.showsPhysics = true */
         
         // Load the SKScene from 'Scene.sks'
         if let scene = SKScene(fileNamed: "Scene") {
             sceneView.presentScene(scene)
         }
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,11 +62,33 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode;
+        let rand = arc4random_uniform(_: 4)
+        if UIDevice.current.orientation.isLandscape {
+            switch rand {
+            case 0:
+                return SKSpriteNode(imageNamed: "icon_pixel_orange.png")
+            case 1:
+                return SKSpriteNode(imageNamed: "icon_pixel_gelb.png")
+            case 2:
+                return SKSpriteNode(imageNamed: "icon_pixel_grün.png")
+            default:
+                return SKSpriteNode(imageNamed: "icon_pixel.png")
+            }
+        } else {
+            switch rand {
+            case 0:
+                return SKSpriteNode(imageNamed: "full_suit_orange.png")
+            case 1:
+                return SKSpriteNode(imageNamed: "full_suit_gelb.png")
+            case 2:
+                return SKSpriteNode(imageNamed: "full_suit_grün.png")
+            default:
+                return SKSpriteNode(imageNamed: "full_suit.png")
+            }
+        }
     }
+    
+    
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user

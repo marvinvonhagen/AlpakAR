@@ -14,6 +14,19 @@
 		F7D46C0A1FA6129F007394E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C081FA6129F007394E0 /* Main.storyboard */; };
 		F7D46C0C1FA6129F007394E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C0B1FA6129F007394E0 /* Assets.xcassets */; };
 		F7D46C0F1FA6129F007394E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C0D1FA6129F007394E0 /* LaunchScreen.storyboard */; };
+		F7D46C171FA61324007394E0 /* alpakaSuit.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C161FA61324007394E0 /* alpakaSuit.png */; };
+		F7D46C191FA61353007394E0 /* full_suit_gelb.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C181FA61353007394E0 /* full_suit_gelb.png */; };
+		F7D46C1B1FA61358007394E0 /* full_suit_grün.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C1A1FA61358007394E0 /* full_suit_grün.png */; };
+		F7D46C221FA6136D007394E0 /* icon_pixel_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C1C1FA6136C007394E0 /* icon_pixel_orange.png */; };
+		F7D46C231FA6136D007394E0 /* icon_pixel_gelb.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C1D1FA6136C007394E0 /* icon_pixel_gelb.png */; };
+		F7D46C241FA6136D007394E0 /* icon_pixel_grün.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C1E1FA6136C007394E0 /* icon_pixel_grün.png */; };
+		F7D46C251FA6136D007394E0 /* icon_pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C1F1FA6136C007394E0 /* icon_pixel.png */; };
+		F7D46C261FA6136D007394E0 /* full_suit_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C201FA6136D007394E0 /* full_suit_orange.png */; };
+		F7D46C271FA6136D007394E0 /* full_suit.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C211FA6136D007394E0 /* full_suit.png */; };
+		F7D46C291FA61373007394E0 /* profilbild final.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C281FA61373007394E0 /* profilbild final.png */; };
+		F7D46C2B1FA61D73007394E0 /* AlpakAR AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C2A1FA61D73007394E0 /* AlpakAR AppIcon.png */; };
+		F7D46C2D1FA61DE6007394E0 /* RoundedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D46C2C1FA61DE5007394E0 /* RoundedIcon.png */; };
+		F7D46C311FA62D64007394E0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D46C301FA62D64007394E0 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,19 @@
 		F7D46C0B1FA6129F007394E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7D46C0E1FA6129F007394E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7D46C101FA6129F007394E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D46C161FA61324007394E0 /* alpakaSuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpakaSuit.png; sourceTree = "<group>"; };
+		F7D46C181FA61353007394E0 /* full_suit_gelb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_suit_gelb.png; sourceTree = "<group>"; };
+		F7D46C1A1FA61358007394E0 /* full_suit_grün.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full_suit_grün.png"; sourceTree = "<group>"; };
+		F7D46C1C1FA6136C007394E0 /* icon_pixel_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pixel_orange.png; sourceTree = "<group>"; };
+		F7D46C1D1FA6136C007394E0 /* icon_pixel_gelb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pixel_gelb.png; sourceTree = "<group>"; };
+		F7D46C1E1FA6136C007394E0 /* icon_pixel_grün.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pixel_grün.png"; sourceTree = "<group>"; };
+		F7D46C1F1FA6136C007394E0 /* icon_pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pixel.png; sourceTree = "<group>"; };
+		F7D46C201FA6136D007394E0 /* full_suit_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_suit_orange.png; sourceTree = "<group>"; };
+		F7D46C211FA6136D007394E0 /* full_suit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_suit.png; sourceTree = "<group>"; };
+		F7D46C281FA61373007394E0 /* profilbild final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profilbild final.png"; sourceTree = "<group>"; };
+		F7D46C2A1FA61D73007394E0 /* AlpakAR AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlpakAR AppIcon.png"; sourceTree = "<group>"; };
+		F7D46C2C1FA61DE5007394E0 /* RoundedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundedIcon.png; sourceTree = "<group>"; };
+		F7D46C301FA62D64007394E0 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,19 @@
 		F7D46BFF1FA6129F007394E0 /* AlpakAR */ = {
 			isa = PBXGroup;
 			children = (
+				F7D46C301FA62D64007394E0 /* StartViewController.swift */,
+				F7D46C2C1FA61DE5007394E0 /* RoundedIcon.png */,
+				F7D46C2A1FA61D73007394E0 /* AlpakAR AppIcon.png */,
+				F7D46C281FA61373007394E0 /* profilbild final.png */,
+				F7D46C201FA6136D007394E0 /* full_suit_orange.png */,
+				F7D46C211FA6136D007394E0 /* full_suit.png */,
+				F7D46C1D1FA6136C007394E0 /* icon_pixel_gelb.png */,
+				F7D46C1E1FA6136C007394E0 /* icon_pixel_grün.png */,
+				F7D46C1C1FA6136C007394E0 /* icon_pixel_orange.png */,
+				F7D46C1F1FA6136C007394E0 /* icon_pixel.png */,
+				F7D46C1A1FA61358007394E0 /* full_suit_grün.png */,
+				F7D46C181FA61353007394E0 /* full_suit_gelb.png */,
+				F7D46C161FA61324007394E0 /* alpakaSuit.png */,
 				F7D46C001FA6129F007394E0 /* AppDelegate.swift */,
 				F7D46C021FA6129F007394E0 /* Scene.sks */,
 				F7D46C041FA6129F007394E0 /* Scene.swift */,
@@ -129,10 +168,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D46C2B1FA61D73007394E0 /* AlpakAR AppIcon.png in Resources */,
 				F7D46C031FA6129F007394E0 /* Scene.sks in Resources */,
+				F7D46C1B1FA61358007394E0 /* full_suit_grün.png in Resources */,
+				F7D46C251FA6136D007394E0 /* icon_pixel.png in Resources */,
 				F7D46C0F1FA6129F007394E0 /* LaunchScreen.storyboard in Resources */,
+				F7D46C231FA6136D007394E0 /* icon_pixel_gelb.png in Resources */,
+				F7D46C261FA6136D007394E0 /* full_suit_orange.png in Resources */,
 				F7D46C0C1FA6129F007394E0 /* Assets.xcassets in Resources */,
+				F7D46C171FA61324007394E0 /* alpakaSuit.png in Resources */,
+				F7D46C291FA61373007394E0 /* profilbild final.png in Resources */,
+				F7D46C221FA6136D007394E0 /* icon_pixel_orange.png in Resources */,
 				F7D46C0A1FA6129F007394E0 /* Main.storyboard in Resources */,
+				F7D46C2D1FA61DE6007394E0 /* RoundedIcon.png in Resources */,
+				F7D46C271FA6136D007394E0 /* full_suit.png in Resources */,
+				F7D46C241FA6136D007394E0 /* icon_pixel_grün.png in Resources */,
+				F7D46C191FA61353007394E0 /* full_suit_gelb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7D46C071FA6129F007394E0 /* ViewController.swift in Sources */,
+				F7D46C311FA62D64007394E0 /* StartViewController.swift in Sources */,
 				F7D46C051FA6129F007394E0 /* Scene.swift in Sources */,
 				F7D46C011FA6129F007394E0 /* AppDelegate.swift in Sources */,
 			);
