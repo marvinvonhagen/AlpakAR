@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gA2-AA-99Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gA2-AA-99Y">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Start View Controller-->
         <scene sceneID="MCI-sa-cuo">
@@ -29,28 +24,50 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKv-yw-DIh">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvr-9t-jA4">
+                                                <rect key="frame" x="20" y="342" width="335" height="51"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <viewLayoutGuide key="safeArea" id="gfq-P6-Bfg"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
+                                                <state key="normal" title="Start alpakAR!"/>
+                                                <connections>
+                                                    <action selector="SA:" destination="gA2-AA-99Y" eventType="touchUpInside" id="lwX-YX-EOV"/>
+                                                    <segue destination="BV1-FR-VrT" kind="show" id="TR2-qg-F0q"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RoundedIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="rDh-l1-3P4">
+                                                <rect key="frame" x="16" y="0.0" width="343" height="323"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <viewLayoutGuide key="safeArea" id="lDv-ue-Hrp"/>
+                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNK-fd-mXC">
-                                                <rect key="frame" x="16" y="372" width="343" height="530"/>
+                                                <rect key="frame" x="16" y="399" width="343" height="487"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <viewLayoutGuide key="safeArea" id="Olb-D5-UpV"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="Shoot pictures with our hackathon mascot Paka!">
+                                                    <fragment content="Shoot pictures with our hackathon mascot">
                                                         <attributes>
-                                                            <font key="NSFont" size="24" name="AvenirNext-Medium"/>
-                                                            <font key="NSOriginalFont" size="17" name="AvenirNext-Medium"/>
+                                                            <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                            <font key="NSOriginalFont" size="24" name="AvenirNext-DemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", the a">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
-                                                        <string key="content" base64-UTF8="YES">
-Cg
+                                                        <string key="content">lpaka!
 </string>
                                                         <attributes>
-                                                            <font key="NSFont" size="17" name="AvenirNext-Medium"/>
+                                                            <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                            <font key="NSOriginalFont" size="24" name="AvenirNext-DemiBold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
-                                                    <fragment content="Tap to spawn Pakas – you can always clear everything and access this screen again by swiping upwards.">
+                                                    <fragment content="Tap to spawn alpacas – you can always clear everything and access this screen again by swiping upwards.">
                                                         <attributes>
                                                             <font key="NSFont" size="17" name="AvenirNext-Regular"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -66,7 +83,7 @@ Cg
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
-                                                    <fragment content="AlpakAR evolved out of the project ">
+                                                    <fragment content="alpacAR evolved out of the project ">
                                                         <attributes>
                                                             <font key="NSFont" size="17" name="AvenirNext-Regular"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -84,7 +101,20 @@ Cg
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
-                                                    <fragment content="Jugend Hackt">
+                                                    <fragment content="Jugend ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="AvenirNext-Italic"/>
+                                                            <font key="NSOriginalFont" size="17" name="AvenirNext-Italic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="h">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="AvenirNext-Italic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="ackt">
                                                         <attributes>
                                                             <font key="NSFont" size="17" name="AvenirNext-Italic"/>
                                                             <font key="NSOriginalFont" size="17" name="AvenirNext-Italic"/>
@@ -152,27 +182,14 @@ Tobias Blum</string>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvr-9t-jA4">
-                                                <rect key="frame" x="20" y="343" width="335" height="48"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                                <viewLayoutGuide key="safeArea" id="gfq-P6-Bfg"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
-                                                <state key="normal" title="Start AlpakAR!"/>
-                                                <connections>
-                                                    <segue destination="BV1-FR-VrT" kind="show" id="TR2-qg-F0q"/>
-                                                </connections>
-                                            </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RoundedIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="rDh-l1-3P4">
-                                                <rect key="frame" x="16" y="0.0" width="343" height="323"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                                <viewLayoutGuide key="safeArea" id="lDv-ue-Hrp"/>
-                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9i4-xT-vso">
-                                                <rect key="frame" x="20" y="862" width="335" height="55"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="16" y="894" width="335" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                 <state key="normal" title="Contact us"/>
                                                 <connections>
+                                                    <action selector="cU:" destination="gA2-AA-99Y" eventType="touchUpInside" id="xG0-47-eM8"/>
+                                                    <action selector="sendMail2:" destination="Vtp-nB-C0e" eventType="touchUpInside" id="4SH-Ma-RZt"/>
                                                     <action selector="sendMail:" destination="gA2-AA-99Y" eventType="touchUpInside" id="3mv-v2-bZ2"/>
                                                 </connections>
                                             </button>
@@ -207,6 +224,7 @@ Tobias Blum</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2Q-4m-BfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Vtp-nB-C0e" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-524" y="33.990147783251231"/>
         </scene>
@@ -217,14 +235,25 @@ Tobias Blum</string>
                     <arskView key="view" contentMode="scaleToFill" id="EO5-fy-WZq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="VVM-de-4ym" appends="YES" id="UkC-XB-OkT"/>
+                        </connections>
                     </arskView>
                     <connections>
+                        <outlet property="sGR" destination="VVM-de-4ym" id="dXN-PB-RkW"/>
                         <outlet property="sceneView" destination="EO5-fy-WZq" id="YuC-8q-ovz"/>
+                        <segue destination="gA2-AA-99Y" kind="show" identifier="uSSegue" id="lCw-Y6-3Xs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="VVM-de-4ym">
+                    <connections>
+                        <action selector="puSS:" destination="BV1-FR-VrT" id="R9Q-SG-k1Y"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="614" y="34"/>
+            <point key="canvasLocation" x="466" y="-35"/>
         </scene>
     </scenes>
     <resources>
