@@ -30,7 +30,7 @@ class StartViewController: UIViewController, MFMailComposeViewControllerDelegate
     @IBAction func sendMail(_ sender: Any) {
         let mc: MFMailComposeViewController = MFMailComposeViewController()
         mc.mailComposeDelegate = self
-        mc.setToRecipients(["COD3LTA@vHagen.me"])
+        mc.setToRecipients(["alpacAR@vHagen.me"])
         self.present(mc, animated: true, completion: nil)
         ratingTimer.invalidate()
     }
